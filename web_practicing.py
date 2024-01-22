@@ -36,7 +36,7 @@ def find_job():
             for skill in no_skills:
                 if skill in skills_requirement:
                     have_unfamiliar_skills = True
-                    break
+                    
             if not have_unfamiliar_skills:
                 company_name = job.find('h3',class_ = "joblist-comp-name").text.replace(' ','')
                 more_info = job.h2.a['href']        
