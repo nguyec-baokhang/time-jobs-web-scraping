@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-
+import time
 
 
 
@@ -46,5 +46,8 @@ def find_job():
             else:
                 continue
 
-                
-find_job()
+if __name__ == '__main__':
+    find_job()
+    time_wait = 3
+    print(f"Waiting time is {time_wait} minutes")
+    time.sleep(time_wait*60)
